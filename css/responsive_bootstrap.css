@@ -1,0 +1,36 @@
+:root{
+  --bs-primary: #2c3e50;
+  --bs-secondary: #3498db;
+  --bs-accent: #e74c3c;
+  --bs-light: #f8f9fa;
+  --bs-dark: #1a252f;
+  --bs-text: #333333;
+  --shadow: 0 5px 15px rgba(0,0,0,0.12);
+  --transition: all 0.3s ease;
+}
+
+
+/* Containers */
+.container, .container-fluid { padding-left: 1rem; padding-right: 1rem; }
+
+/* Header */
+header { position: sticky; top: 0; z-index: 1100; background: rgba(255,255,255,0.98); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+/* Navbar links gap */
+.nav-links { gap: 1rem; align-items: center; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, rgba(44,62,80,0.88), rgba(52,152,219,0.8)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: #fff;
+  min-height: 75vh;
+  display: flex; align-items: center;
+  padding: 4rem 0;
+  background-attachment: scroll;
+}
+.hero .hero-content { padding: 2rem 1rem; }
+.hero h1 { font-size: clamp(1.8rem, 6vw, 3.5rem); line-height: 1.05; font-weight:700;}
+.hero p { font-size: clamp(1rem, 2.5vw, 1.25rem); opacity:0.95; }
+
+
+
