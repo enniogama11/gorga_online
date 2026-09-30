@@ -20,7 +20,10 @@ const navLinks = document.querySelector('.nav-links');
 if (hamburger) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        hamburger.innerHTML = navLinks.classList.contains('active') ? 
+        const isOpen = navLinks.classList.contains('active');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        hamburger.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        hamburger.innerHTML = isOpen ?
             '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
     });
 }
@@ -41,6 +44,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 navLinks.classList.remove('active');
                 if (hamburger) {
                     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.setAttribute('aria-label', 'Abrir menu');
                 }
             }
         }
