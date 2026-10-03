@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+<!DOCTYPE html><html lang="pt-PT"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agência GORGA - Marketing Digital, SEO, Design, Gestão de Tráfego e muito mais em Angola">
@@ -8,23 +8,14 @@
      <link rel="icon" type="images/png" href="images/GORGA.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/futuristic-original-colors.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive_bootstrap.css">
+    <link rel="stylesheet" href="css/project-motion.css">
     <style>
        
     </style>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-        </div>
-    </div>
-
    <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
@@ -151,62 +142,75 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Projectos reais: a linha SVG acompanha o progresso do scroll. -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Veja o Nosso Portfólio</h2>
-                <p>Conheça alguns dos nossos trabalhos de sucesso</p>
+                <h2>Projectos reais, em movimento</h2>
+                <p>Trabalho publicado, capturado directamente das demos. A linha acompanha a navegação e liga cada projecto ao próximo.</p>
             </div>
-            
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="marketing">Marketing</button>
-                <button class="filter-btn" data-filter="fotografia">Fotografia</button>
+            <div class="portfolio-intro">
+                <p>Explora os projectos e abre as versões online. Sem mockups — cada imagem mostra o site real.</p>
+                <p class="portfolio-count">03 PROJECTOS <span aria-hidden="true">·</span> ANGOLA</p>
             </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in" data-category="design">
-                    <img src="images/design.jpg" alt="Projeto Design" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Branding Corporativo</h3>
-                        <p>Design de identidade visual completa</p>
-                        <button class="btn">Ver Detalhes</button>
+            <div class="project-timeline" id="projectTimeline">
+                <svg class="timeline-rail" id="timelineSvg" aria-hidden="true" focusable="false">
+                    <path class="timeline-track" id="timelineTrack"></path>
+                    <path class="timeline-progress" id="timelineProgress"></path>
+                    <circle class="timeline-head" id="timelineHead" r="5" visibility="hidden"></circle>
+                </svg>
+                <article class="project-step step-left">
+                    <span class="project-node" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <a class="project-shot" href="https://enniogama11.github.io/gorga_online/" target="_blank" rel="noopener noreferrer" aria-label="Abrir a demo GORGA Online">
+                            <img src="img/gorga-marketing.webp" alt="Captura real do site GORGA Online, página inicial de marketing digital" loading="lazy">
+                        </a>
+                        <div class="project-copy">
+                            <p class="project-kicker"><span>01 / Marketing digital</span><span class="project-status">Online</span></p>
+                            <h3>GORGA Online</h3>
+                            <p>Site institucional da GORGA, focado em serviços de marketing digital, design e presença online em Angola.</p>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://enniogama11.github.io/gorga_online/" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Ver demo</a>
+                                <a class="project-link" href="https://github.com/enniogama11/gorga_online" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="portfolio-item fade-in delay-1" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Projeto Web" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>E-commerce Moderno</h3>
-                        <p>Plataforma de vendas online</p>
-                        <button class="btn">Ver Detalhes</button>
+                </article>
+                <article class="project-step step-right">
+                    <span class="project-node" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <a class="project-shot" href="https://nexos.site.je/?i=1" target="_blank" rel="noopener noreferrer" aria-label="Abrir a demo do portal NEXO">
+                            <img src="img/nexo.webp" alt="Captura real da página inicial do portal editorial NEXO" loading="lazy">
+                        </a>
+                        <div class="project-copy">
+                            <p class="project-kicker"><span>02 / Portal editorial</span><span class="project-status">Online</span></p>
+                            <h3>NEXO</h3>
+                            <p>Portal de conteúdos sobre tecnologia, Angola, cultura e oportunidades, com artigos e áreas temáticas.</p>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://nexos.site.je/?i=1" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Ver demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="portfolio-item fade-in delay-2" data-category="marketing">
-                    <img src="images/marketing.jpg" alt="Projeto Marketing" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Campanha Digital</h3>
-                        <p>Estratégia de marketing integrada</p>
-                        <button class="btn">Ver Detalhes</button>
+                </article>
+                <article class="project-step step-left">
+                    <span class="project-node" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <a class="project-shot" href="https://hotshop.free.je/index.php?i=1" target="_blank" rel="noopener noreferrer" aria-label="Abrir a demo da loja Hotline Shoppe">
+                            <img src="img/hotline-shop.webp" alt="Captura real da loja online Hotline Shoppe" loading="lazy">
+                        </a>
+                        <div class="project-copy">
+                            <p class="project-kicker"><span>03 / Comércio electrónico</span><span class="project-status">Online</span></p>
+                            <h3>Hotline Shoppe</h3>
+                            <p>Loja online com catálogo por categorias, pesquisa, carrinho e produtos em destaque para clientes em Angola.</p>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://hotshop.free.je/index.php?i=1" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Ver demo</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="portfolio-item fade-in delay-3" data-category="fotografia">
-                    <img src="images/audiovisual.jpg" alt="Projeto Fotografia" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>Sessão de Produtos</h3>
-                        <p>Fotografia profissional para e-commerce</p>
-                        <button class="btn">Ver Detalhes</button>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="sobre" class="about">
         <div class="container">
@@ -388,19 +392,7 @@
    <a href="#" class="back-to-top" aria-label="Voltar ao topo" role="button" tabindex="0"><i class="fas fa-arrow-up"></i></a>
 
 
-    <!-- Modal/Lightbox -->
-    <div class="modal" id="portfolioModal">
-        <div class="modal-content">
-            <span class="modal-close">�</span>
-            <img src="" alt="" class="modal-img">
-            <div class="modal-info">
-                <h3>Project Title</h3>
-                <p>Project description goes here...</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/futuristic.js"></script>
+    <script src="js/project-motion.js"></script>
 
 
 </body></html>
